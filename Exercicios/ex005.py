@@ -1,4 +1,4 @@
-#Faça um programa que leia um número inteiro e mostre na tela o seu sucessor e o seu antecessor:
+#ex005: Faça um programa que leia um número inteiro e mostre na tela o seu sucessor e o seu antecessor:
 #COMO EU FIZ:
 print('====== DESAFIO 05 ======')
 n = int(input('Digite um número inteiro: '))
