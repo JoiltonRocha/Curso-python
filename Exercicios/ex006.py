@@ -1,3 +1,4 @@
+#Crie um algoritimo que leia um número e mostre o seu dobro, trplo e raiz quadrada.
 print('====== DESAFIO 06 ======')
 n = int(input('Digite um número: '))
 d = n * 2
