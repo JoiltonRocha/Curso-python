@@ -6,7 +6,10 @@ print('====== DESAFIO 36 ======')
 casa = float(input('Qual o valor da casa? R$'))
 salário = float(input('Qual o valor do salário? R$'))
 prazo = int(input('Qual o prazo para pagamento em anos? '))
-if casa / (prazo * 12) > 30 / 100 * salário:
-    print('Empréstimo negado.')
+parcela = casa / (prazo * 12)
+percentual = (parcela * 100) / salário
+print('*' * 50)
+if percentual > 30:
+    print(f'Valor da casa: R${casa:.2f}\nPrazo para pagamento: {prazo} anos\nParcelas R${parcela:.2f}\nEssa parcela representa {percentual:.1f}% do salário. De acordo com o Banco Central, o limite é de 30%.')
 else:
-    print('Empréstimo aprovado!')
+    print(f'Empréstimo aprovado!\nValor da casa: R${casa:.2f}\nPrazo para pagamento: {prazo} anos\nParcelas: R${parcela:.2f}.')
