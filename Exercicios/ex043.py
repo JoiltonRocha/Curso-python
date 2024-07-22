@@ -8,8 +8,8 @@ print('====== DESAFIO 43 ======')
 print('*' * 30)
 print('CÁLCULO DE IMC')
 print('*' * 30)
-alt = float(input('Altura: '))
-peso = float(input('Peso: '))
+alt = float(input('Altura (m): '))
+peso = float(input('Peso (Kg): '))
 imc = peso / alt ** 2
 if imc < 18.5:
     print(f'O seu imc é {imc:.1f}: Abaixo do peso.')
