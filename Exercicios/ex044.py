@@ -3,22 +3,26 @@
 - À vista no cartão: 5% de desconto.
 - Em até 2x no cartão: preço normal.
 - 3x ou mais no cartão: 20% de juros.'''
-print('====== DESAFIO 44 ======')
-vlr = float(input('Valor do produto:'))
-fpgto = int(input('Forma de pagamento:\nÀ vista dinheiro ou cheque digite [1]\nCartão em 1x digite [2]\nCartão em 2x digite [3]\nCartão em 3x ou mais digite [4]\n->'))
+print(f'{'DESAFIO 44':=^30}')
+vlr = float(input('Valor da compra:'))
+print(f'''FORMAS DE PAGAMENTO:
+[1] À vista dinheiro ou cheque
+[2] Cartão em 1x
+[3] Cartão em 2x
+[4] Cartão em 3x ou mais''')
+fpgto = int(input('Digite a opção desejada: '))
 if fpgto == 1:
-    desc = vlr * 0.10
-    vlrd = vlr - desc
-    print(f'Pagando dessa forma o produto de {vlr:.2f} fica por {vlrd:.2f}. 10% de desconto.')
+    total = vlr - (vlr * 10 / 100)
+    print(f'Pagando dessa forma, a compra de {vlr:.2f} fica por {total:.2f}. 10% de desconto.')
 elif fpgto == 2:
-    desc = vlr * 0.05
-    vlrd = vlr - desc
-    print(f'Pagando dessa forma o produto de {vlr:.2f} fica por {vlrd:.2f}. 5% de desconto.')
+    total = vlr - (vlr * 5 / 100)
+    print(f'Pagando dessa forma, a compra de {vlr:.2f} fica por {total:.2f}. 5% de desconto.')
 elif fpgto == 3:
-    vlrd = vlr
-    print(f'Pagando dessa forma você parcela o valor de {vlr:.2f} em até 2x sem acréscimo.')
-else:
-    fpgto == 4
-    desc = vlr * 0.2
-    vlrd = vlr + desc
-    print(f'Pagando dessa forma você parcela o produto de {vlr:.2f} em até 12x de {vlrd / 12:.2f} ({vlrd:.2f}) um pequeno acréscimo de 20%.')
+    total = vlr
+    print(f'Pagando dessa forma você parcela a compra com valor de {vlr:.2f} em até 2x sem acréscimo.')
+elif fpgto == 4:
+    total = vlr + (vlr * 20 / 100)
+    parcelas = int(input('Digite a quantidade de parcelas: '))
+    vlrparcelas = total / parcelas
+    print(f'Sua compra será parcelada em {parcelas}x de {vlrparcelas:.2f} (COM JUROS).')
+print(f'Sua compra de R${vlr:.2f} vai custar {total:.2f} no final.')
