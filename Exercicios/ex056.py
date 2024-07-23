@@ -10,4 +10,4 @@ for c in range(1, 5):
     str(input('Digite o sexo mulher [M] ou homem [H]: '))
 media = idade / 4
 print(f'A média de idades dessas quatro pessoas é {media}')
-    if 
+    if
