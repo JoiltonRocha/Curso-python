@@ -8,4 +8,3 @@ for c in range(3, 501, 3):
         soma = soma + c #Pode ser escrito: soma += c
         cont = cont + 1 #Pode ser escrito: cont += 1
 print(f'A soma de todos os {cont} números ímpares e múltiplos de três no intervalo entre 1 e 500 é {soma}')
-
