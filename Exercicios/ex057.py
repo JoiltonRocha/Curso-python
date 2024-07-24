@@ -4,8 +4,8 @@ print(f'{'DESAFIO 57':=^45}')
 sexo = 1
 while sexo != 0:
     sexo = str(input('Digite o sexo [M/F]:')).upper()
-    if sexo == 'F' or 'M':
+    if sexo = M or F:
         print('Aceito!')
     else:
-        print('Opção inválida. Digite uma opção válida')
+        print('Opção inválida. Escolha uma das opções.')
 print('FIM')
