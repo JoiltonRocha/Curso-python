@@ -4,7 +4,7 @@
 #COMO EU FIZ:
 import random
 from time import sleep
-print('====== DESAFIO 29 ======')
+print('====== DESAFIO 28 ======')
 print('Vamos jogar? Escolha um intervalo numérico a partir de 2 dígitos (quanto maior o intervalo, maior a dificuldade):')
 n1 = int(input('Número inicial: '))
 n2 = int(input('Número final: '))
