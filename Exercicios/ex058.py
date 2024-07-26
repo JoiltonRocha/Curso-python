@@ -14,7 +14,7 @@ palpites = 0
 while not acertou:
     jogador = int(input('Qual número você acha que eu pensei? '))
     print('PROCESSANDO...')
-    sleep(0.5)
+    sleep(1)
     palpites = palpites + 1 # Pode ser escrito: palpites += 1
     if jogador == computador:
         acertou = True
