@@ -4,7 +4,7 @@ números foram digitados e qual foi a soma entre eles (desconcidere o flag).'''
 print(f'{'DESAFIO 66':=^45}')
 cont = soma = 0
 while True:
-    num = int(input('Digite um número: '))
+    num = int(input('Digite um número [999 para finalizar]: '))
     if num == 999:
         break
     cont = cont + 1
