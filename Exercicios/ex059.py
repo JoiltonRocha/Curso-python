@@ -26,8 +26,10 @@ while opção != 5:
     if opção == 3:
         if n1 > n2:
             print(f'{n1} é maior que {n2}.')
-        else:
+        elif n2 > n1:
             print(f'{n2} é maior que {n1}.')
+        else:
+            print(f'{n1} é igual a {n2}')
     if opção == 4:
         n1 = int(input('Digite o primeiro valor: '))
         n2 = int(input('Digite o segundo valor: '))
@@ -40,3 +42,10 @@ while opção != 5:
         opção = int(input('Opção: '))
     if opção == 5:
         print('Você escolheu sair.')
+    if opção >= 6:
+        print('''Opção inválida. Tente novamente.
+        [1] Somar.
+        [2] Multiplicar.
+        [3] Maior.
+        [4] Novos números.
+        [5] Sair do programa.''')
