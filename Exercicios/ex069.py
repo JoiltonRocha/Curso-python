@@ -9,6 +9,8 @@ while True:
     print(f'{'CADASTRE UMA PESSOA':-^40}')
     idade = int(input('Digite a idade: '))
     sexo = str(input('Digite o sexo [M/F]: ')).upper().strip()[0]
+    while sexo not in 'MF':
+        sexo = str(input('Digite o sexo [M/F]: ')).upper().strip()[0]
     if idade > 18:
         totp18 = totp18 +1
     if sexo in ('M'):
@@ -16,8 +18,6 @@ while True:
     if sexo in 'F' and idade < 20:
         totf20 = totf20 + 1
     if sexo not in 'MF':
-        while sexo not in 'MF':
-            sexo = str(input('Digite o sexo [M/F]: ')).upper().strip()[0]
     print('-' * 40)
     continuar = str(input('Quer continuar? [S/N]: ')).upper().strip()[0]
     if continuar not in 'SN':
