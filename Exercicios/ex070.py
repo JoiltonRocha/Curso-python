@@ -4,23 +4,27 @@ A) Qual é o total gasto na compra.
 B) Quantos produtos custam mais de R$1.000,00.
 C) Qual é o nome do produto mais barato.'''
 print(f'{'DESAFIO 70':=^45}')
-total = mil = preçob = 0
+total = mil = preçob = cont = 0
 barato = ''
 while True:
     print(F'{'PRODUTO E PREÇO':*^40}')
     produto = str(input('Digite o nome do produto: '))
     preço = float(input('Digite o preço do produto: '))
+    cont = cont + 1
     total = total + preço
     if preço > 1000:
         mil = mil + 1
-    if preço <preçob:
+    if cont == 1:
         preçob = preço
         barato = produto
+    else:
+        if preço < preçob:
+            preçob = preço
+            barato = produto
     print('-' * 40)
     continuar = str(input('Quer continuar? [S/N]')).upper().strip()[0]
-    if continuar not in 'SN':
-        while continuar not in 'SN':
-            continuar = str(input('Quer continuar? [S/N]')).upper().strip()[0]
+    while continuar not in 'SN':
+        continuar = str(input('Quer continuar? [S/N]')).upper().strip()[0]
     print('=' * 40)
     if continuar in 'N':
         break
