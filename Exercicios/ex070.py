@@ -29,4 +29,4 @@ if mil < 1:
     print('Nenhum produto custou mais de R$1.000,00.')
 else:
     print(f'Produto com preço superior a R$1.000,00: {mil}')
-print(f'O produto mais parato foi {barato} que custou R${preçob:.2f}')
+print(f'O produto mais barato foi {barato} que custou R${preçob:.2f}')
