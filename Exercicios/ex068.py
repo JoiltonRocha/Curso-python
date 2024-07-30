@@ -4,15 +4,31 @@ print(f'{'DESAFIO 68':=^45}')
 from random import randint
 opções = ('ÍMPAR', 'PAR')
 print('VAMOS JOGAR PAR OU ÍMPAR')
-pc = randint(0, 10)
-numpc = pc
-if pc % 2 == 0:
-    pc = 'PAR'
-else:
-    pc = 'ÍMPAR'
-print(numpc)
-print(f'Computador escolheu  {pc}')
-njogador = int(input('Digite um número: '))
-jogador = str(input('Par ou Ímpar? [P/I]')).upper().strip()[0]
-if (njogador + numpc) % 2 == 0 and pc in 'PAR':
-    pc =
+v = 0
+while True:
+    print('-' * 40)
+    pc = randint(1, 10)
+    jogador = int(input('Digite um número: '))
+    total = pc + jogador
+    tipo = ' '
+    while tipo not in 'PI':
+        tipo = str(input('Par ou Ímpar? [P/I]: ')).strip().upper()[0]
+    print(f'Você jogou {jogador} e o computador, {pc}.')
+    print('-' * 40)
+    if tipo == 'P':
+        if total % 2 == 0:
+            print(f'{total} é PAR. Você VENCEU!')
+            v = v + 1
+        else:
+            print(f'{total} é ÍMPAR. Você PERDEU!')
+            break
+    elif tipo == 'I':
+        if total % 2 != 0:
+            print(f'{total} é ÍMPAR. Você VENCEU!')
+            v = v + 1
+        else:
+            print(f'{total} é PAR. Você PERDEU!')
+            break
+    print('-' * 40)
+    print('Vamos jogar novamente?')
+print(f'GAME OVER! Você venceu {v} vezes.')
