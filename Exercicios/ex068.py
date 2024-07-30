@@ -13,21 +13,22 @@ while True:
     tipo = ' '
     while tipo not in 'PI':
         tipo = str(input('Par ou Ímpar? [P/I]: ')).strip().upper()[0]
-    print(f'Você jogou {jogador} e o computador, {pc}.')
+    print(f'Você jogou {jogador} e o computador, {pc}. Total {total}.')
+    print('DEU PAR' if total % 2 == 0 else 'DEU ÍMPAR')
     print('-' * 40)
     if tipo == 'P':
         if total % 2 == 0:
-            print(f'{total} é PAR. Você VENCEU!')
+            print('Você VENCEU!')
             v = v + 1
         else:
-            print(f'{total} é ÍMPAR. Você PERDEU!')
+            print(f'Você PERDEU!')
             break
     elif tipo == 'I':
         if total % 2 != 0:
-            print(f'{total} é ÍMPAR. Você VENCEU!')
+            print('Você VENCEU!')
             v = v + 1
         else:
-            print(f'{total} é PAR. Você PERDEU!')
+            print('Você PERDEU!')
             break
     print('-' * 40)
     print('Vamos jogar novamente?')
