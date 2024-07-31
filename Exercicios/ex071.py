@@ -41,18 +41,19 @@ if um > 0:
 
 
 
-#Bendito 'While'!
+#Bendito 'while'!
 valor = int(input('Digite o valor a ser sacado: R$ '))
 total = valor
 céd = 50
 totcéd = 0
+print('-' * 45)
 while True:
     if total >= céd:
         total = total - céd
         totcéd = totcéd + 1
     else:
         if totcéd > 0:
-            print(f'Total de {totcéd} cédulas de R${céd}')
+            print(f'{totcéd} cédulas de R${céd}')
         if céd == 50:
             céd = 20
         elif céd == 20:
