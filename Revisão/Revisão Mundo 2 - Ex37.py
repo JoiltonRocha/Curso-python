@@ -1,4 +1,4 @@
-#Ex: 37 -> Base numérica.
+#Ex: 037 -> Base numérica.
 num = int(input('Digite um número: '))
 base = ('Binário', 'Octal', 'Hexadecimal')
 base = int(input('''Base de conversão: 
