@@ -1,4 +1,4 @@
-#Ex: 36 -> Empréstimo bancário.
+#Ex: 036 -> Empréstimo bancário.
 valor = float(input('Digite o valor da casa: '))
 salário = float(input('Digite o salário: '))
 prazo = int(input('Digite o prazo para pagamento em anos: '))
