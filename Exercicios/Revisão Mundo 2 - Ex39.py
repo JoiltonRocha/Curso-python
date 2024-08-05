@@ -27,8 +27,8 @@ while True:
         else:
             print(f'Você tem {idade} anos. Passaram-se {diferença} anos da idade para o alistamento militar.')
     print('*' * 90)
-    continuar = str(input('Continuar? [S/N]'))
+    continuar = str(input('Continuar? [S/N]')).upper().strip()[0]
     while continuar not in 'SN':
-        continuar = str(input('Continuar? [S/N]'))
+        continuar = str(input('Continuar? [S/N]')).upper().strip()[0]
     if continuar in 'N':
         break
