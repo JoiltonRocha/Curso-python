@@ -1,4 +1,4 @@
-#Ex: 38 -> Maior, menor ou igual.
+#Ex: 038 -> Maior, menor ou igual.
 continuar = ''
 comp = igualdade = n1Mn2 = n1mn2 = 0
 while continuar in 'S':
