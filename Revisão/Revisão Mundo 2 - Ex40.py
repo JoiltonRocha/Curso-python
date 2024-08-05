@@ -1,4 +1,4 @@
-#Ex40 -> Média de notas.
+#Ex 040 -> Média de notas.
 total = []
 contador = total = 0
 qnota = 1
