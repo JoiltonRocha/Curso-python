@@ -1,13 +1,10 @@
 #Ex 041 -> Categoria Natação.
-from datetime import date
 mirim = infantil = junior = senior = master = cont = 0
-while True
+from datetime import date
+while True:
     anonasc = int(input('Digite o ano de nascimento: '))
-    anoatual = date.year
+    anoatual = date.today().year
     idade = anoatual - anonasc
-    continuar = str(input('Deseja informar outro atleta [S/N]?')).upper().strip()[0]
-    while continuat not in 'SN':
-        continuar = str(input('Deseja informar outro atleta [S/N]?')).upper().strip()[0]
     if idade <= 9:
         print(f'IDADE: {idade} anos -> CATEGORIA: Mirim.')
         mirim = mirim + 1
@@ -24,11 +21,13 @@ while True
         print(f'IDADE {idade} anos -> CATEGOTRIA: Master.')
         master = master + 1
         cont = cont + 1
+    continuar = str(input('Deseja informar outro atleta [S/N]?')).upper().strip()[0]
+    while continuar not in 'SN':
+        continuar = str(input('Deseja informar outro atleta [S/N]?')).upper().strip()[0]
     if continuar in 'N':
         break
 print(f'FIM!!!')
-print(f'Foram informados {cont} atletas.')
-print('DOS QUAIS:')
+print(f'Foram informados {cont} atletas. DOS QUAIS:')
 if mirim > 0:
     print(f'MIRIM: {mirim}.')
 if infantil > 0:
