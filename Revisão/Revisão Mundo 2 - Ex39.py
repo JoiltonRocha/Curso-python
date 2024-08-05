@@ -1,4 +1,4 @@
-#Ex: 39 -> Alistamento militar.
+#Ex: 039 -> Alistamento militar.
 from datetime import date
 diferença = 0
 idade = ''
