@@ -18,7 +18,7 @@ while True:
     if idade < 18:
         diferença = 18 - idade
         if diferença == 1:
-            print(f'Quem nasceu em {anonasc} hoje tem {idade} anos. Falta {diferença} ano para atingir a idade para o alistamento militar.')
+            print(f'Quem nasceu em {anonasc} hoje tem {idade} anos . Falta {diferença} ano para atingir a idade para o alistamento militar.')
         else:
             print(f'Quem nasceu em {anonasc} hoje tem {idade} anos. Faltam {diferença} anos para atingir a idade para o alistamento militar.')
         print(f'Seu alistamento será em {anoalistamento}.')
