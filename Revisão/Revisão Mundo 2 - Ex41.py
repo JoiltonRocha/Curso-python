@@ -9,15 +9,19 @@ while True:
         print(f'IDADE: {idade} anos -> CATEGORIA: Mirim.')
         mirim = mirim + 1
         cont = cont + 1
-    elif idade > 9 and idade <= 14:
+    elif idade <= 14:
         print(f'IDADE: {idade} anos -> CATEGORIA: Infantil.')
         infantil = infantil + 1
         cont = cont + 1
-    elif idade >14 and idade <= 19:
+    elif idade <= 19:
+        print(f'IDADE: {idade} anos -> CATEGORIA: Junior.')
+        junior = junior + 1
+        cont = cont + 1
+    elif idade <= 25:
         print(f'IDADE: {idade} anos -> CATEGORIA: Sênior.')
         senior = senior + 1
         cont = cont + 1
-    elif idade >= 20:
+    else:
         print(f'IDADE {idade} anos -> CATEGOTRIA: Master.')
         master = master + 1
         cont = cont + 1
@@ -29,10 +33,12 @@ while True:
 print(f'FIM!!!')
 print(f'Foram informados {cont} atletas. DOS QUAIS:')
 if mirim > 0:
-    print(f'MIRIM: {mirim}.')
+    print(f'{mirim}: MIRIM.')
 if infantil > 0:
-    print(f'INFANTIL: {infantil}.')
+    print(f'{infantil}: INFANTIL.')
 if junior > 0:
-    print(f'JUNIOR: {junior}.')
+    print(f'{junior}: JUNIOR.')
+if master > 0:
+    print(f'{master}: MASTER.')
 if senior > 0:
-    print(f'MASTER: {master}.')
+    print(f'{senior}: SÊNIOR.')
