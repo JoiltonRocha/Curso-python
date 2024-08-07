@@ -17,9 +17,9 @@ while continuar in 'S':
         print(f'O primeiro valor é maior.')
         comp = comp + 1
         n1Mn2 = n1Mn2 + 1
-    continuar = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
+    continuar = str(input('Deseja informar outros números? [S/N] ')).upper().strip()[0]
     while continuar not in 'SN':
-        continuar = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
+        continuar = str(input('Deseja informar outros números? [S/N] ')).upper().strip()[0]
 print('-' * 50)
 print(f'Você escolheu sair. Foram feitas {comp} comparações, das Quais:')
 if igualdade > 0:
