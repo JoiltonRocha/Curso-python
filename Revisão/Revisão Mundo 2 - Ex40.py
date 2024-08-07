@@ -9,12 +9,13 @@ while True:
     nota2 = float(input(f'Digite a {qnota}ª nota: '))
     qnota = qnota + 1
     contador = contador + 1
-    total.apend(nota1)
-    continuar = str(input('Quer continuar [S/N]? ')).upper().strip()[0]
+    continuar = str(input('Deseja informar mais notas? [S/N] -> ')).upper().strip()[0]
     while continuar not in 'SN':
-        ontinuar = str(input('Quer continuar [S/N]? ')).upper().strip()[0]
+        ontinuar = str(input('Deseja informar mais notas? [S/N] -> ')).upper().strip()[0]
     if continuar in 'N':
         break
-
-    media = (nota1 + nota2) / contador
-print(total)
+    if contador == 2:
+        media = (qnota(1) + qnota(2)) / contador
+    if contador == 4:
+        media = (qnota(1) + qnota(2) + qnota(3) + qnota(4)) / contador
+print(media)
