@@ -16,7 +16,7 @@ while True:
             print(f'{r1} mais {r2} mais {r3} formam um triângulo {tipotriangulo[1]}, quando ao menos dois lados são iguais.')
         else:
             escaleno = escaleno + 1
-            print(f'{r1} mais {r2} mais {r3} formam um triângulo {tipotriangulo[1]}, quando todos os lados são diferentes.')
+            print(f'{r1} mais {r2} mais {r3} formam um triângulo {tipotriangulo[2]}, quando todos os lados são diferentes.')
     else:
         ntriangulo = ntriangulo + 1
         print(f'Os segmentos informados não podem formar um triângulo pois não obedecem a condição de existência. ')
@@ -26,10 +26,25 @@ while True:
     if continuar in 'N':
         break
 print('*' * 100 )
-print(f'''# Foram informados {contador} conjuntos de três segmentos. Dos quais:
-{ntriangulo} -> NÃO FORMAM TRIÂNGULO.
-{triangulo} -> FORMAM TRIANGULO.
-* DOS QUE FORMAM TRIÂNGULO:''')
+if contador > 0:
+    if contador == 1:
+        print(f'# Foi informado 1 conjunto de três segmentos. Que:')
+    else:
+        print(f'# Foram informados {contador} conjuntos de três segmentos. Dos quais:')
+if ntriangulo > 0:
+    if ntriangulo == 1:
+        if contador == 1:
+            print('NÃO FORMA TRIÂNGULO.')
+        else:
+            print(f'{ntriangulo} -> NÃO FORMA TRIÂNGULO.')
+    else:
+        print(f'{ntriangulo} -> NÃO FORMAM TRIÂNGULO.')
+if triangulo > 0:
+    if triangulo == 1:
+        print(f'{triangulo} -> FORMA TRIANGULO.')
+    else:
+        print(f'{triangulo} -> FORMAM TRIANGULO.')
+    print('* DOS QUE FORMAM TRIÂNGULO:')
 if equilatero > 0:
     print(f'- {equilatero} -> EQUIÁTERO.')
 if isosceles > 0:
