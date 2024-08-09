@@ -14,7 +14,7 @@ while True:
         for c in range (inicio, final, intervalo):
             cont = cont + 1
             soma = soma + c
-        print(f'A soma dos {cont} números {(tipo[pi])} entre {inicio} e {final} é {soma}.')
+        print(f'A soma dos {cont} números {(tipo[pi])} entre {inicio} e {final - 1} é {soma}.')
     elif pi == 1 or pi == 2:
         for c in range(inicio, final, intervalo):
             if c % 2 == pi:
