@@ -12,8 +12,8 @@ while True:
     soma = cont = 0
     for c in range(inicio, final, intervalo):
         if pi == 0:
-                cont = cont + 1
-                soma = soma + c
+            cont = cont + 1
+            soma = soma + c
         elif pi == 1:
             if c % 2 == 1:
                 cont = cont + 1
