@@ -9,6 +9,6 @@ while True:
     continuar = str(input('Deseja fazer outra contagem? [S/N] -> ')).upper().strip()[0]
     while continuar not in 'SN':
         continuar = str(input('Deseja fazer outra contagem? [S/N] -> ')).upper().strip()[0]
-    if continuar in 'N'
+    if continuar in 'N':
         break
 print('FIM!!!')
