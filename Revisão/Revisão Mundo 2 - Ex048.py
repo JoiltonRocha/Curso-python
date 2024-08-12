@@ -4,7 +4,7 @@ while True:
     inicio = int(input('Digite o número inicial: '))
     final = int(input('Digite o número final: '))
     intervalo = int(input('Digite o intervalo: '))
-    pi = int(input('''*Escolha uma das opções de filtro paras os números desejados:
+    pi = int(input('''*Escolha uma das opções de filtro para os números desejados:
     [0] PARES E ÍMPARES
     [1] APENAS ÍMPARES
     [2] APENAS PARES
@@ -12,7 +12,6 @@ while True:
     soma = cont = 0
     for c in range(inicio, final, intervalo):
         if pi == 0:
-            if pi % 2 == 1 or pi % 2 == 0:
                 cont = cont + 1
                 soma = soma + c
         elif pi == 1:
