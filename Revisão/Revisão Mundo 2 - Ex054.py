@@ -17,7 +17,7 @@ while True:
         break
 print(f'Foram informados {soma} anos de nascimento. Dos quais:')
 if somamais > 0:
-    print(f'{somamais:2} -> Com idade maior ou igual a 18 anos.')
+    print(f'{somamais:2} -> Com idade igual ou maior que 18 anos.')
 if somamin > 0:
     print(f'{somamin:2} -> Com idade menor que 18 anos.')
 
