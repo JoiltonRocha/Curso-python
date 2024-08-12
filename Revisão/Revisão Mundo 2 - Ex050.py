@@ -12,15 +12,14 @@ while True:
     cont = soma = 0
     for c in range(inicio, final, intervalo):
         if pi == 0:
-            if pi % 2 == 1 or pi % 2 == 0:
                 cont = cont + 1
                 soma = soma + c
         elif pi == 1:
-            if pi % 2 != 0:
+            if c % 2 == 1:
                 cont = cont + 1
                 soma = soma + c
         elif pi == 2:
-            if pi % 2 == 0:
+            if c % 2 == 0:
                 cont = cont + 1
                 soma = soma + c
     print(f'A soma dos {cont} números {(tipo[pi])} entre {inicio} e {final - 1} é {soma}.')
