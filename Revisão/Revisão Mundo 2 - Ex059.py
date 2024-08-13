@@ -3,7 +3,7 @@ from time import sleep
 num1 = int(input('Informe um número: '))
 num2 = int(input('Informe outro número: '))
 while True:
-    opção = int(input('''OPÇÕES:
+    opção = int(input('''* * * OPÇÕES: * * * 
 [1] Somar 
 [2] Multiplicar
 [3] Maior
@@ -11,13 +11,15 @@ while True:
 [5] Sair do programa
 Opção desejada: '''))
     while opção < 1 or opção >= 6:
+        print('*' * 30)
         print('Escolha uma opção válida.')
-        print('''OPÇÕES:
-        [1] Somar 
-        [2] Multiplicar
-        [3] Maior
-        [4] Novos números
-        [5] Sair do programa''')
+        print('*' * 30)
+        print('''* * * OPÇÕES: * * *
+[1] Somar 
+[2] Multiplicar
+[3] Maior
+[4] Novos números
+[5] Sair do programa''')
         opção = int(input('Opção desejada: '))
     if opção == 4:
         num1 = int(input('Informe um número: '))
@@ -35,7 +37,6 @@ Opção desejada: '''))
             print(f'Entre {num1} e {num2} o maior é {num2}.')
     if opção == 5:
         break
-    print('*' * 30)
 print('Finalizando...')
 sleep(1)
 print('Calculadora finalizada.')
