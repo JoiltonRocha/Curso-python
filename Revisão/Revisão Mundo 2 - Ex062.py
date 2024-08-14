@@ -12,5 +12,6 @@ while mais > 0:
         termo = termo + razao
         cont = cont + 1
     print('PAUSA')
-    mais = int(input('Deseja mostrar mais quantos termos? '))
-print(f'FIM! Foram informados {total} termos.')
+    mais = int(input('Informe mais quantos termos da PA deseja mostrar ou, tecle [0] para sair: '))
+print(f'FIM! Foram mostrados {total} termos.')
+
