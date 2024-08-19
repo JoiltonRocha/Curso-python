@@ -1,6 +1,7 @@
 #Ex 067 -> Tabuada v3.0.
 num = 1
 while num > 0:
+    print('*' * 40)
     num = int(input('Digite um número para ver sua tabuada: '))
     if num < 0:
         break
