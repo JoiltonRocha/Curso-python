@@ -63,4 +63,3 @@ while True:
         totcéd = 0
         if total == 0:
             break
-print('Essas cédulas serão entregues a seguir.')
