@@ -25,7 +25,7 @@ while True:
             break
     print('+-' * 30)
 if v == 0:
-    print(f'GAME OVER! Sem vencer uma vez, sequer.')
+    print(f'GAME OVER! Sem vitória.')
 else:
     if v == 1:
         print(f'GAME OVER! Você venveu {v} apenas uma vez.')
