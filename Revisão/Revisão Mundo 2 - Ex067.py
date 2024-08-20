@@ -8,3 +8,4 @@ while num > 0:
     else:
         for c in range(1, 11):
             print(f'{num} x {c:2} = {c * num:3}')
+print('Tabuada encerrada!')
