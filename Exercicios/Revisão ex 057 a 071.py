@@ -243,3 +243,73 @@ if totF > 0:
 
 
 #ex070
+'''soma = prodmil = cont = prodbarato = contmil = 0
+nomebarato = nomemil = ''
+while True:
+    print(f'{'CADASTRO DE PRODUTOS':+^40}')
+    produto = str(input('PRODUTO: '))
+    preço = float(input('PREÇO: '))
+    cont = cont + 1
+    soma = soma + preço
+    if preço >= 1000:
+        contmil = contmil + 1
+        if contmil == 1:
+            prodmil = preço
+            nomemil = produto
+        elif preço > prodmil:
+            prodmil = preço
+            nomemil = produto
+    if cont == 1:
+        prodbarato = preço
+        nomebarato = produto
+    elif preço < prodbarato:
+        prodbarato = preço
+        nomebarato = produto
+    continuar = str(input('Deseja continuar? [S/N] -> ')).upper().strip()[0]
+    while continuar not in 'SN':
+        continuar = str(input('Deseja continuar? [S/N] -> ')).upper().strip()[0]
+    if continuar in 'N':
+        break
+print('=' * 40)
+print(f'TOTAL: R$ {soma:.2f}')
+if prodmil > 0:
+    print(f'-> Quantidade de produto maior ou igual a R$ 1.000,00: {contmil}')
+    print(f'-> O mais caro: {nomemil}. Preço: {prodmil}')
+print(f'-> Produto mais barato: {nomebarato}. Preço: {prodbarato:.2f} ')'''
+
+
+#ex071:
+'''saque = int(input('Informe o valor do saque: R$ '))
+total = saque
+céd = 200
+cont = 0
+while True:
+    if total >= céd:
+        total = total - céd
+        cont = cont + 1
+    else:
+        if cont > 0:
+            print(f'-> {cont} cédulas de R$ {céd}')
+        if céd == 200:
+            céd = 100
+        elif céd == 100:
+            céd = 50
+        elif céd == 50:
+            céd = 20
+        elif céd == 20:
+            céd = 10
+        elif céd == 10:
+            céd = 5
+        elif céd == 5:
+            céd = 1
+        cont = 0
+        if total == 0:
+            break'''
+
+
+lanche = ('hamburguer', 'suco', 'pizza', 'pudim')
+for c in lanche:
+    print(c)
+
+
+
