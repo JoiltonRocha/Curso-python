@@ -1,7 +1,8 @@
 '''Crie um programa que vai gerar cinco números aleatórios e colocar em uma tupla.
 Depois disso, mostre a listagem de números gerados e também indique o menor e o maior valor que estão na tupla.'''
 print(f'{'DESAFIO 74':=^45}')
-from random import randint
+#COMO EU FIZ:
+'''from random import randint
 cont = maior = menor = 0
 print('Os valores sorteados foram: ', end='')
 while cont < 5:
@@ -18,4 +19,13 @@ while cont < 5:
         if num > maior:
             maior = num
 print(f'\nO maior número sorteado foi {maior}')
-print(f'O menor número sorteado foi {menor}')
+print(f'O menor número sorteado foi {menor}')'''
+
+#COMO O PROFESSOR FEZ:
+from random import randint
+tupla = (randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10))
+print('Os valores sorteados foram: ', end='')
+for n in tupla:
+    print(f'{n} ', end='')
+print(f'\nO maior valor sorteado foi {max(tupla)}')
+print(f'O menor valor sorteado foi {min(tupla)}')
