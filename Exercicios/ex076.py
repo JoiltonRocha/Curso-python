@@ -8,7 +8,7 @@ print('-' * 45)
 print(f'{'LISTAGEM DE PREÇOS':^45}')
 print(f'-' * 45)
 for c in range(0, len(tupla)):
-    print(f'{tupla[contprod]:.<30} R$ {tupla[contpreço]:.2f  }')
+    print(f'{tupla[contprod]:.<30} R$ {tupla[contpreço]:>6.2f}')
     contprod = contprod + 2
     contpreço = contpreço + 2
 print('-' * 45)
