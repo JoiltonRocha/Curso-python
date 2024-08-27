@@ -7,13 +7,13 @@ for c in range(0, 5):
     n = (int(input('Digite um número: ')))
     if c == 0 or n > num[-1]:
         num.append(n)
-        print(f'"{n}" adicionado no final da lista.')
+        print(f'"{n}" foi adicionado no final da lista.')
     else:
         pos = 0
         while pos < len(num):
             if n <= num[pos]:
                 num.insert(pos, n)
-                print(f'"{n}" adicionado na posição {pos} da lista')
+                print(f'"{n}" foi  adicionado na posição {pos} da lista')
                 break
             pos = pos + 1
 print('=' * 30)
