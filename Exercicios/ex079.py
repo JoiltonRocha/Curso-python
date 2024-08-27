@@ -3,10 +3,17 @@ exista lá dentro, ele não será adicionado. No final, serão exibidos todos os
 print(f'{'DESAFIO 79':=^45}')
 num = list()
 while True:
-    num.append(int(input('Digite um número: ')))
-    if num 
+    n = (int(input('Digite um número: ')))
+    if n not in num:
+        num.append(n)
+        print('Valor adicionado com sucesso!')
+    else:
+        print('Número duplicado não pode ser adicionado.')
     continuar = str(input('Deseja informar outro número? [S/N] -> ')).upper().strip()[0]
     while continuar not in 'SN':
         continuar = str(input('Deseja informar outro número? [S/N] -> ')).upper().strip()[0]
     if continuar in 'N':
         break
+print('=' * 30)
+num.sort()
+print(f'Você adicionaou os valores {num}')
