@@ -3,20 +3,23 @@ Depois disso, crie duas listas extras que vão contar apenas os valores pares e 
 Ao final, mosotre os conteúdo das três listas geradas.'''
 print(f'{'DESAFIO 82':=^45}')
 cont = 0
-valores = pares = impares = list()
+valores = list()
+pares = list()
+impares = list()
 while True:
-    valores.append(int(input('Digite um número: ')))
+    n = int(input('Digite um número: '))
+    valores.append(n)
     cont = cont + 1
+    if n % 2 == 0:
+        pares.append(n)
+    else:
+        impares.append(n)
     continuar = str(input('Deseja informar outro número? [S/N] -> ')).upper().strip()[0]
     while continuar not in 'SN':
         continuar = str(input('Deseja informar outro número? [S/N] -> ')).upper().strip()[0]
     if continuar in 'N':
         break
-for c in range(0, len(valores)):
-    if valores[c] % 2 == 0:
-        pares = pares.append(valores[c])
-    else:
-        impares = impares.append(valores[c])
+print(f'{'FIM!':=^45}')
 print(f'LISTA: {valores}')
-print(f'PARES: {pares}')
-print(f'ÍMPARES: {impares}')
+print(f'PARES da LISTA: {pares}')
+print(f'ÍMPARES da LISTA: {impares}')
