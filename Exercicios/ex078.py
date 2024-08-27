@@ -4,22 +4,23 @@ print(f'{'DESAFIO 78':=^45}')
 valores = list()
 maior = menor = cont = posmaior = posmenor = 0
 for c in range(0, 5):
-    valores.append(int(input('Digite um valor: ')))
-    if len(valores) == 1:
-        maior = valores[0]
-        menor = valores[0]
-        posmaior = enumerate(valores[cont])
-        posmenor = enumerate(valores[cont])
+    valores.append(int(input(f'Digite um valor na posição {c}: ')))
+    if c == 0:
+        maior = menor = valores[c]
     else:
-        cont = cont + 1
-        if valores[cont] > maior:
-            maior = valores[cont]
-            posmaior = valores[cont]
-        if valores[cont] < menor:
-            menor = valores[cont]
-            posmenor = valores[cont]
-for pos, v in enumerate(valores):
-    print('Fim')
+        if valores[c] > maior:
+            maior = valores[c]
+        if valores[c] < menor:
+            menor = valores[c]
+print('=' * 40)
 print(f'Você digitou os valores {valores}')
-print(f'O menor valor digitado foi {menor} na posição {pos}.')
-print(f'O maior valor digitado foi {maior} na posição {pos}.')
+print(f'O menor valor digitado foi {menor} nas posições ', end='')
+for i, v in enumerate(valores):
+    if v == menor:
+        print(f'{i}... ', end='')
+print()
+print(f'O maior valor digitado foi {maior} nas posições ', end='')
+for i, v in enumerate(valores):
+    if v == maior:
+        print(f'{i}... ', end='')
+print()
