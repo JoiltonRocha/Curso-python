@@ -16,5 +16,5 @@ for c in range(0, 5):
                 print(f'"{n}" foi  adicionado na posição {pos} da lista')
                 break
             pos = pos + 1
-print('=' * 30)
+print(f'{'FIM!':=^45}')
 print(f'Os valores digitados, ordenados em ordem crescente fica assim: {num}')
