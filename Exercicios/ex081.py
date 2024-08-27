@@ -19,6 +19,6 @@ print(f'-> Foram digitados {cont} números.')
 num.sort(reverse=True)
 print(f'-> A lista em ordem decrescente é {num}')
 if 5 in num:
-    print('-> O 5 está na lista.')
+    print('-> O "5" está na lista.')
 else:
-    print('-> O 5 não foi encontrado na lista.')
+    print('-> O "5" não foi encontrado na lista.')
