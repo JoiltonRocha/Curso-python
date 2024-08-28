@@ -8,7 +8,7 @@ while True:
         num.append(n)
         print('Valor adicionado com sucesso!')
     else:
-        print('Número duplicado não pode ser adicionado.')
+        print(f'O Número {n} não pode ser adicionado pois já foi adicionado na posição {num.index(n)}.')
     continuar = str(input('Deseja informar outro número? [S/N] -> ')).upper().strip()[0]
     while continuar not in 'SN':
         continuar = str(input('Deseja informar outro número? [S/N] -> ')).upper().strip()[0]
